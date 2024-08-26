@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="LagunaCuisine.css" />
+
+    <title>Laguna Cuisine-KleinRecipe</title>
+  </head>
+  <body>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+
+<!-- navigation bar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light sticky-top"
+      style="background-color: #e3f2fd"
+    >
+    <h4 class="h4  text-info font-weight-bold ">Klein<span class="  h4  text-danger font-weight-bolder " style="padding-right: 5px;">Recipe </span></h4>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link btn-outline-warning" style="padding-left: 10px;"href="index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link btn-outline-warning" style="padding-left: 10px;"href="BatangasCuisine.html">Batangas Cuisine <span class="sr-only">(current)</span></a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle btn-outline-warning"
+style="padding-left: 10px;"              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Laguna Cuisine
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#AlooGobiItems">Desserts </a>
+              <a class="dropdown-item" href="#DosaItems">Espasol</a>
+              <a class="dropdown-item" href="#VadaPavItems">Pie</a>
+              
+              
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link btn-outline-warning" style="padding-left: 10px;"href="CaviteCuisine.html">Cavite Cuisine <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link btn-outline-warning "style="padding-left: 10px;" href="https://www.foodpanda.ph/city/laguna" target="_blank">Shop Now <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <!-- how to link section of different page -->
+          <a class="nav-link navpad btn-outline-info" style="padding-left: 10px;" href="index.html#aboutus"
+            >Contact Me <span class="sr-only">(current)</span></a>
+        </form>
+      </div>
+    </nav>
+<!-- description about food -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="h1 font-weight-bolder">Laguna Cuisine</h1>
+        <p class="lead">
+            The Philippines is highly diverse in terms of cuisine appreciation, particularly when it comes to specialties. It is customary for Filipinos to acquire their popular products whenever they visit a particular location. It appears that many sweet delicacies have served as a source of pride throughout the Philippines, one of which is the Laguna Province. 
+        </p>
+      </div>
+    </div>
+<!-- pictured of food -->
+    <div
+      id="carouselExampleControls"
+      class="carousel slide pic"
+      data-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="images/ic1.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="images/ic2.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="images/ic3.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleControls"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleControls"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+   
+    <br />
+    <br />
+<!-- reciepe section     -->
+    <nav class="navbar navbar navbar-light" style="background-color: #e3f2fd">
+      <div class="mx-auto">
+        <h2 class="h2 font-weight-bolder">"All The Recipes"</h2>
+      </div>
+    </nav>
+
+    <!--Desserts coooking video section -->
+    <div>
+      <div class="box">
+        <button type="button" class="btn-danger btn-lg disabled">
+          <h3 id="AlooGobiItems">Desserts :</h3>
+        </button>
+
+        <br />
+        <br />
+
+        <div
+          class="
+            row row-cols-md-1 row row-cols-1 row row-cols-sm-1 row-cols-lg-2
+          "
+        >
+          <div class="col col1 mb-4">
+            <div class="card cardbox" style="height: 100%; width: 100%">
+              
+               
+                <iframe  class="mx-auto video"
+                width="100%"
+                height="475" src="https://www.youtube.com/embed/qFy7WGaDo_8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="card-body">
+                <h5 class="card-title">
+                  BIBINGKA | Recipe | PANLASANG PINOY | RECIPE
+                  KLEIN
+                </h5>
+
+                <p class="card-text overflow">
+                 <Strong> Ingredients for BIBINGKA: <br /></Strong>
+
+                  - 1 tablespoon baking powder
+                  - 6 pieces banana leaves, round shape; about 9 inches in diameter
+                  - ½ cup butter
+                  - 1 ½ cup coconut milk
+                  - 3 eggs
+                  - ½ cup sticky rice flour
+                  - 3 tablespoons oyster sauce
+                  - 2 cups rice flour
+                  - 1 piece salted egg, cut into wedges
+                  - 1 cup sugar
+
+                  <br />
+                  <Strong>Ingredients for BIBINGKA TOPPINGS: <br /></Strong>
+
+                  - 1 tablespoon butter
+                  - 1 tablespoon cheese, cheddar cheese or Edam cheese
+                  - 1 tablespoon grated coconut
+                  - 1 tablespoon sugar
+                  
+                   <br />
+                  <Strong>Preparation: <br /></Strong>
+                  
+
+                  - Heat wok or pan. Sear pork fat until enough oil is extracted. Saute onion and garlic until the onion softens. Add pork, chicken, and liver. Saute until the outer parts turn light brown. Add soy sauce, oyster sauce, and water. Cover the wok. Let the liquid boil. Add crushed red pepper and brown sugar. Stir. Continue boiling for 5 minutes. Add fresh noodles. Toss. Put the carrot and cabbage into the wok. Continue tossing until all ingredients are well blended. Cover and cook for 2 minutes. Season with ground black pepper and pour cornstarch slurry (2 teaspoons of cornstarch + 2 teaspoons of soy sauce + ¼ cup water). Toss.Add boiled quail eggs. Transfer to a serving plate. Serve! Share and enjoy!<br />
+                  
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col col1 mb-4">
+            <div class="card cardbox" style="height: 100%; width: 100%">
+              
+                
+                <iframe class="mx-auto video"
+                width="100%"
+                height="475" src="https://www.youtube.com/embed/herhjkHoajY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="card-body">
+                <h5 class="card-title">
+                  ROYAL BIBINGKA | Recipe | PANLASANG PINOY | RECIPE
+                  KLEIN
+                </h5>
+                <p class="card-text overflow">
+                 <Strong> Ingredients for ROYAL BIBINGKA: <br /></Strong>
+
+                  - 1½ cup glutinous rice flour
+                  - 6 tablespoons sweet rice flour Mochico
+                  - 2 cups coconut milk
+                  - 1 cup sugar
+                  - 1/3 cup evaporated milk
+                  - ½ cup margarine softened
+                  - 3/4 cup shredded cheddar cheese
+                  - 4 egg yolks
+                  - 1 egg
+
+                 
+                   <br />
+                 <Strong> Preparation: <br /></Strong>
+                  
+
+                  - Preheat oven to 350F. Combine the glutinous rice flour, sweet rice flour, and sugar in a bowl. Whisk until well blended. Set aside. In a clean bowl, beat the eggs, pour the evaporated milk and coconut milk and then continue to beat until all the ingredients are well incorporated. Gradually add the rice flour mixture to the bowl with wet ingredients and continue to whisk until the texture becomes soft. Brush margarine into the aluminum molds and then pour the mixture equally between all molds. Temporarily cover the molds with foil. Bake for 18 minutes. Remove the cover. Brush with more margarine and sprinkle cheese on top. Put back in the oven and continue to bake in 350F for 22 minutes. Set the oven to broil and broil for 8 minutes.<br />
+                  
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col col1 mb-4">
+            <div class="card cardbox" style="height: 100%; width: 100%">
+            
+                
+                <iframe class="mx-auto video"
+                width="100%"
+                height="475" src="https://www.youtube.com/embed/hY47V4husOM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="card-body">
+                <h5 class="card-title">
+                  BIBINGKA | FILIPINO BAKED COCONUT RICE CAKES Recipe | PANLASANG PINOY | RECIPE
+                  KLEIN
+                </h5>
+                <p class="card-text overflow">
+                  <Strong>Ingredients for ROYAL BIBINGKA: <br /></Strong>
+
+                  - Banana leaves enough to line your molds
+                  - 28.35 g (2 tbsp) unsalted butter melted
+                  - 64 g (13 tbsp) white granulated sugar
+                  - 184 g (6 fl oz) coconut milk
+                  - 60 g (2 fl oz) whole milk
+                  - 170 g (1 ½ c) rice flour
+                  - 5 g (1 tsp) baking powder
+                  - 1 g (¼ tsp) salt
+                  - 1 egg
+
+                  <br />
+                  <Strong>TOPPINGS: <br /></Strong>
+
+                  - 1 salted duck egg sliced into quarters
+                  - Unsweetened coconut shreds
+                  - Cheddar cheese or Velveeta shredded
+
+                  <br />
+                  <Strong>EQUIPMENT USED: <br /></Strong>
+
+                  - 11-inch whisk – OXO
+                  - glass bowl – Anchor Hocking
+                  - flour sifter
+                  - 4 (5-7 inch diameter) brioche molds – Gobel
+                 
+                   <br />
+                  <Strong>Preparation: <br /></Strong>
+                  
+
+                  - Preheat the oven to 400 °F. Carefully clean the banana leaves under running water, making sure not to rip them. If your banana leaves are tough, carefully warm them over a warm stove making sure not to have the fire or electric burners touch the banana leaves (or they will burn). Once the leaves are soft and moldable, line the molds with banana leaves. You can use scissors to cut off the excess banana leaves around the edge. In a large mixing bowl, cream together the melted butter and sugar until combined. Pour the coconut milk and whole milk and whisk until combined. Sift the rice flour, baking powder, and salt into the wet ingredients. Whisk together the ingredients until there are no more lumps. Pour the batter into the molds about 80% of the way up. Put the molds on a sheet pan to help stabilize the bibingka. Put the molds and sheet pan into the oven. After 9 minutes, add the salted egg topping to the bibingka and continue to bake for another 10 minutes. **NOTE: for coconut shreds, wait until 11 minutes to prevent burning the coconut. For cheese topping, wait until 19 minutes before adding to prevent burning the cheese. After 19 total minutes bake time, rotate the bibingka molds 180° to promote even baking since the back of the oven is usually hotter. Cook for an additional 5 minutes. Test the bibingka by pushing a cake tester or toothpicks into the middle of the bibingka. If it comes out clean, the bibingka should be done. If it’s wet, continue to cook for an additional 2 minutes and then check again. The bibingka should be firm in the middle and slightly golden on the top, but not burned.<br />
+                  
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col col1 mb-4">
+            <div class="card cardbox" style="height: 100%; width: 100%">
+             
+                
+                <iframe class="mx-auto video"
+                width="100%"
+                height="475" src="https://www.youtube.com/embed/agXo97fJ5ys" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="card-body">
+                <h5 class="card-title">
+                  ASSORTED MINI BIBINGKA | FILIPINO Recipe | PANLASANG PINOY | RECIPE
+                  KLEIN
+                </h5>
+                <p class="card-text overflow">
+                  <Strong>Ingredients: <br></Strong>
+- C4 pieces eggs <br>
+- 1 pack MAYA Original Fluffy n’ Tasty Hotcake Mix 200 grams <br>
+- 1/4 cup sugar <br>
+- 1 tablespoon rice flour <br>
+- ¼ cup fresh milk  <br>
+- ¼ cup coconut cream store bought <br>
+- ¼ cup coconut milk store bought <br>
+- 1/4 cup butter melted <br>
+- Different flavorings and toppings as desired ube flavoring, buko pandan flavoring, instant coffee powder, leche flan, chocolate ganache, etc. <br>
+- salted egg sliced <br>
+- cheese sliced or grated <br>
+- banana leaves for lining of pans (optional) <br>
+- grated coconut optional <br>
+
+<Strong>Preparation: <br></Strong>
+1. Preheat oven to 350⁰F/177⁰C. Line mamon molder or 6-holes 8oz muffin pans with banana leaves. Set aside. <br>
+2. In a bowl beat eggs, then add hotcake mix, rice flour, sugar, milk, coconut milk, coconut cream, and melted butter. Mix well. Fold in desired flavors. <br>
+3. Fill up to ¾ of the mamon molder or muffin pans with the bibingka mixture. Bake bibingka for 10 to 15 minutes or until toothpick inserted in the middle comes out clean. <br>
+4. Note: In the middle of baking, around 5 to 6 minutes of baking, gently take the half baked bibingka and top it up with sliced salted egg and sliced or grated cheese. Then put it back in the oven to completely bake the bibingka. <br>
+5. Serve with butter on top and grated coconut on side.  <br>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="btn1">Load More</button>
+      </div>
+
+      <!-- for load more button -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script>
+        $(".col1").slice(0, 2).show();
+        $(".btn1").on("click", function () {
+          $(".col1:hidden").slice(0, 2).slideDown();
+          if ($(".col1:hidden").length == 0) {
+            $(".btn1").fadeOut("slow");
+          }
+        });
+      </script>
+    </div>
+
+    <!--ESPASOL  coooking video section -->
+    <div>
+      <div class="box">
+        <button type="button" class="btn-danger btn-lg disabled">
+          <h3 id="DosaItems">ESPASOL :</h3>
+        </button>
+
+        <br />
+        <br />
+
+        <div
+          class="
+            row row-cols-md-1 row row-cols-1 row row-cols-sm-1 row-cols-lg-2
+          "
+        >
+          <div class="col col2 mb-4">
+            <div class="card cardbox" style="height: 100%; width: 100%">
+              
+                
+                <iframe class="mx-auto video"
+                width="100%"
+                height="475" src="https://www.youtube.com/embed/CJlnYp1Pv1Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="card-body">
+                <h5 class="card-title">
+                  ESPASOL | FILIPINO Recipe | PANLASANG PINOY | RECIPE
+                  KLEIN
+                </h5>
+
+               <p class="card-text overflow">
+                  <Strong>Ingredients: <br></Strong>
+- 3 cups glutinous rice flour toasted <br>
+- 1/2 cup sweet rice flour toasted <br>
+- 2 cups sugar <br>
+- 3 cups coconut milk <br>
+- 1 1/2 cups grated coconut toasted  <br>
+- 1 tsp vanilla essence <br>
+
+
+<Strong>Preparation: <br></Strong>
+1. In a cooking pot, pour-in the coconut milk and bring to a boil. <br>
+2. Add the sugar and stir continuously for 10 minutes. <br>
+3. Put-in the toasted grated coconut and cook for 5 minutes. <br>
+4. Add the vanilla essence and toasted rice flour and cook for 40 minutes to 1 hour or until the mixture becomes really thick while folding. <br>
+5. Remove the mixture from the pot and allow to cool down.  <br>
+6. Dust the toasted sweet rice flour in a flat surface.  <br>
+7. Divide the mixture into parts and roll over the dusted sweet rice flour until a cylindrical shape is formed.  <br>
+8. Slice according to your preference. <br>
+9. Put in a serving plate or wrap in paper or banana leaf. Share and enjoy! <br>
+
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col col2 mb-4">
+            <div class="card cardbox" style="height: 100%; width: 100%">
+              
+                
+                <iframe class="mx-auto video"
+                width="100%"
+                height="475" src="https://www.youtube.com/embed/G5dCOcNnPsE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="card-body">
+                <h5 class="card-title">
+                  UBE PANDA ESPASOL | FILIPINO Recipe | PANLASANG PINOY | RECIPE
+                  KLEIN
+                </h5>
+
+               <p class="card-text overflow">
+                  <Strong>Ingredients UBE FLAVOR: <br></Strong>
+- 2 cups coconut cream <br>
+- 1 ¾ cups evaporated milk <br>
+- ⅓ cup sugar <br>
+- 2 cups ube jam / halaya <br>
+- 1 tbsp ube flavoring <br>
+
+<Strong>Ingredients PANDA FLAVOR: <br></Strong>
+- 2 cups coconut cream <br>
+- 1 ¾ cups evaporated milk <br>
+- ⅓ cup sugar <br>
+- 1 bundle pandan leaves <br>
+- 2 tbsp green food coloring  <br>
+
+<Strong>Preparation UBE FLAVOR: <br></Strong>
+1. Combine coconut cream, evaporated milk, sugar, and ube in a large non-stick pot and bring to a boil. Simmer for 10 minutes. Continue to stir until sugar and ube have completely dissolved and everything is smooth and well combined. <br>
+2. Mix in ube flavoring and toasted glutinous rice flour. Continuously stir until a dry paste that holds its shape forms. Remove from heat. Cool until slightly tacky. <br>
+ 
+<Strong>Preparation PANDA FLAVOR: <br></Strong>
+1. Combine coconut cream, evaporated milk, sugar, and pandan leaves in a large non-stick pot and bring to a boil. Simmer for 10 minutes. Continue to stir until sugar has completely dissolved and everything is smooth and well combined. <br>
+2. Mix in green food coloring and toasted glutinous rice flour. Continuously stir until a dry paste that holds its shape forms. Remove from heat. Cool until slightly tacky. <br>
+
+<Strong>ASSEMBLY: <br></Strong>
+1. Dust surface with remaining toasted glutinous rice flour. Spread and flatten out both flavors to about ½ - inch thickness. Lightly dust the tops with more toasted glutinous rice flour. <br>
+2. Slice ¼ - inch thick strips across each flavor. <br>
+3. Place alternating strips and twist with a bit of pressure until a tight, two-toned rope is formed. Roll in more toasted glutinous rice flour. <br>
+4. Cut into 3-4 - inch pieces. <br>
+
+<Strong>Preparation: <br></Strong>
+1. In a large non-stick pan / wok over medium heat, toast the glutinous rice flour, stirring constantly until everything is an even light brown color. <br>
+2. Set aside 1 cup of the toasted glutinous rice flour and divide the remaining in half. <br>
+
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col col2 mb-4">
+            <div class="card cardbox" style="height: 100%; width: 100%">
+              
+                
+                <iframe class="mx-auto video"
+                width="100%"
+                height="475" src="https://www.youtube.com/embed/HJQ9Gl4Qt60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="card-body">
+                <h5 class="card-title">
+                  ESPASOL SOFT AND CHEWY | THIS FILIPINO DELICACY MAKES A TASTY AND FILLING SNACK OR DESSERT Recipe | PANLASANG PINOY | RECIPE
+                  KLEIN
+                </h5>
+
+               <p class="card-text overflow">
+                  <Strong>Ingredients ESPASOL SOFT AND CHEWY: <br></Strong>
+- 4 1/2 cups glutinous rice flour <br>
+- 4 cups coconut milk <br>
+- 2 cups sugar <br>
+- 1 teaspoon vanilla extract <br>
+- 1 teaspoon salt <br>
+
+  
+<Strong>Preparation: <br></Strong>
+1. In a skillet over medium heat, toast rice flour, stirring frequently, for about 15 to 20 minutes or until color changes to pale gold and aroma becomes nutty. Set aside 1 cup for coating the espasol. <br>
+2. In a wide pan over medium heat, combine coconut milk, sugar, vanilla extract, and salt. Bring to a boil until sugar and salt are dissolved. <br>
+3. Slowly add 3 1/2 cups of the toasted rice flour, whisking vigorously to prevent lumps. Lower heat and continue to cook, stirring and turning regularly, for about 30 to 40 minutes or until mixture is very sticky and becomes oily. <br>
+4. Dust the bottom of a rectangular baking dish with 1/2 cup of the reserved toasted flour. Transfer mixture into the pan. <br>
+5. With a lightly-greased knife or spatula, spread and flatten the mixture evenly. Sprinkle with the remaining reserved toasted flour. <br>
+6. Cut the espasol into desired lengths and then roll on toasted flour to fully coat. Shake to rid of excess flour and wrap each piece in Japanese paper or banana leaves. <br>
+
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col col2 mb-4">
+            <div class="card cardbox" style="height: 100%; width: 100%">
+              
+                
+                <iframe class="mx-auto video"
+                width="100%"
+                height="475" src="https://www.youtube.com/embed/mPD3vMj0oMQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="card-body">
+                <h5 class="card-title">
+                  MACAPUNO ESPASOL | FILIPINO Recipe | PANLASANG PINOY | RECIPE
+                  KLEIN
+                </h5>
+
+               <p class="card-text overflow">
+                  <Strong>Ingredients MACAPUNO ESPASOL: <br></Strong>
+- 2 ½ cups glutinous rice flour <br>
+- 1 14-oz. can coconut cream <br>
+- 1/4 cup sugar or less (depending on your taste preference) <br>
+- 1 cup macapuno <br>
+- 1 tsp vanilla extract <br>
+- ½ tsp salt <br>
+
+  
+<Strong>Preparation: <br></Strong>
+1. In a pan, toast the glutinous rice flour over medium heat for about 25 minutes or until light brown. Set aside. <br>
+2. In a saucepan over medium heat, mix coconut cream and sugar. Stir until sugar is dissolved. <br>
+3. Add the macapuno, salt, and vanilla extract and bring to a gentle boil. <br>
+4. Gradually add 2 cups toasted glutinous rice flour  while stirring. Cook over low heat, stirring constantly,  for 30 minutes or until you get a soft dough-like consistency. <br>
+5. Remove from heat and let cool for a while. <br>
+6. You can divide it into balls and roll each ball into a mini log  and dredged it in the remaining toasted flour. <br>
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="btn2">Load More</button>
+      </div>
+
+      <!-- for load more button -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script>
+        $(".col2").slice(0, 2).show();
+        $(".btn2").on("click", function () {
+          $(".col2:hidden").slice(0, 2).slideDown();
+          if ($(".col2:hidden").length == 0) {
+            $(".btn2").fadeOut("slow");
+          }
+        });
+      </script>
+    </div>
+
+    <!--Pie Pav coooking video section -->
+    <div>
+      <div class="box">
+        <button type="button" class="btn-danger btn-lg disabled">
+          <h3 id="VadaPavItems">Pie :</h3>
+        </button>
+
+        <br />
+        <br />
+
+        <div
+          class="
+            row row-cols-md-1 row row-cols-1 row row-cols-sm-1 row-cols-lg-2
+          "
+        >
+          <div class="col col3 mb-4">
+            <div class="card cardbox" style="height: 100%; width: 100%">
+             
+                
+                <iframe class="mx-auto video"
+                width="100%"
+                height="475" src="https://www.youtube.com/embed/YGLxNDM8IS8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="card-body">
+                <h5 class="card-title">
+                  BUKO PIE | FILIPINO Recipe | PANLASANG PINOY | RECIPE
+                  KLEIN
+                </h5>
+
+               <p class="card-text overflow">
+                  <Strong>Ingredients BUKO PIE: <br></Strong>
+- 2 cups all-purpose flour <br>
+- 1/3 cup butter <br>
+- 1 teaspoon salt <br>
+- 1/3 cup vegetable shortening <br>
+- 6 to 8 tablespoons cold water <br>
+- 2 cups young coconut meat <br>
+- 3/4 cup granulated white sugar <br>
+- 1/2 cup cornstarch diluted in 1/2 cup young coconut water <br>
+- 1/2 cup evaporated milk <br>
+
+  
+<Strong>Preparation: <br></Strong>
+1. Create the crust. Combine flour and salt then mix using a balloon whisk. Add butter and shortening then mix using a pastry mixer. Gradually add cold water a tablespoon at a time while mixing the ingredients. When everything is completely mixed, gather the mixture and divide into two equal parts. In a flat surface flatten each of the dough and roll using a rolling pin until wide enough to fit an eight or nine inch cake pan. Note: Sprinkle flour over the flat surface to prevent the dough from sticking or use a silicon mat. Arrange the first dough over the cake pan. This will be the base. Set the second flattened dough aside. This will be needed after arranging the filling in the cake pan. <br>
+2. Make the filling by heating a saucepan and pour-in the milk. Let boil. <br>
+3. Add the granulated white sugar and stir. <br>
+4. Put-in the young coconut meat and cook for 3 minutes. <br>
+5. Pour-in the cornstarch diluted in young coconut water and stir thoroughly while cooking. Cook until the texture thickens. <br>
+6. Turn-off the heat and allow the mixture to cool down. <br>
+7. Preheat oven to 375 degrees Fahrenheit. <br>
+8. Arrange the cooked filling in the cake pan. <br>
+9. Put the second crust over the filling and seal the sides. <br>
+10. Create holes on the secondary crust using a fork. This will serve as exhaust vents that will prevent the crust from deforming. <br>
+11. Bake for 45 to 55 minutes or until the color turns golden brown. Note: Baking time may vary; make sure to check the color of the crust to determine if baking is complete. <br>
+12. Let cool and serve. Share and enjoy! <br>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="col col3 mb-4">
+            <div class="card cardbox" style="height: 100%; width: 100%">
+             
+                <iframe class="mx-auto video"
+                width="100%"
+                height="475" src="https://www.youtube.com/embed/UIimSEqeN8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="card-body">
+                <h5 class="card-title">
+                  APPLE PIE | FILIPINO Recipe | PANLASANG PINOY | RECIPE
+                  KLEIN
+                </h5>
+
+               <p class="card-text overflow">
+                  <Strong>Ingredients APPLE PIE: <br></Strong>
+- 2 Pastry doughs <br>
+- 1/2 cup butter divided <br>
+- 3 tablespoons flour <br>
+- 1/2 cup granulated white sugar <br>
+- 1/2 cup brown sugar <br>
+- 6 to 8 pieces baking apples granny smith's; peeled, cored, and sliced <br>
+- 1/2 teaspoon ground cinnamon <br>
+- 1/8 teaspoon nutmeg <br>
+
+  
+<Strong>Preparation: <br></Strong>
+1. Preheat oven to 425 degrees Fahrenheit. <br>
+2. In a mixing bowl, combine apples, sugars, flour, nutmeg, and cinnamon then mix well. <br>
+3. Set 1 pastry dough on a round cake or pie pan then put-in the apple mixture and arrange. <br>
+4. Distribute butter on top of the apple mixture. <br>
+5. Cover with the second pie crust then seal the edges. <br>
+6. Bake for 15 minutes then reduce heat to 300 degrees Fahrenheit and bake for another 40 to 45 minutes. <br>
+7. Remove from the oven and serve. <br>
+8. Share and enjoy! <br>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="col col3 mb-4">
+            <div class="card cardbox" style="height: 100%; width: 100%">
+              
+                
+                <iframe class="mx-auto video"
+                width="100%"
+                height="475" src="https://www.youtube.com/embed/HiFuEvKU5jU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="card-body">
+                <h5 class="card-title">
+                  ICE CREAM PIE | FILIPINO Recipe | PANLASANG PINOY | RECIPE
+                  KLEIN
+                </h5>
+
+               <p class="card-text overflow">
+                  <Strong>Ingredients ICE CREAM PIE: <br></Strong>
+- half gallon (2 quarts) favorite ice cream or sorbet <br>
+- 1 (9 inch) pre-made cookie or graham cracker crust <br>
+- Favorite toppings (chocolate chips, chocolate syrup (or Magic Shell), sprinkles, chopped fruit, candy bars, etc.) <br>
+
+  
+<Strong>Preparation: <br></Strong>
+1. Let ice cream thaw until slightly soft and scoop-able. Then gently spread a layer in the pie crust, approximately 1″ thick. Add in a light layer of toppings on top. <br>
+2. Then add one more 1″ thick layer of ice cream, and add more toppings on top.  Freeze the pie until it is firm again, then slice and serve.  (Top with whipped cream if you’d like.) <br>
+
+<Strong>NOTES: <br></Strong>
+<Strong>Ingredient Combination Ideas: <br></Strong>
+4. Mint chocolate-chip ice cream, Oreo crust, chocolate chips, chocolate syrup, chocolate bar shavings <br>
+5. Coffee ice cream, Oreo crust, chocolate syrup, chocolate-covered espresso beans <br>
+6. Strawberry (or any fruit) ice cream, graham-cracker crust, chopped strawberries and bananas (or other fresh fruits) <br>
+7. Toffee ice cream, graham-cracker crust, crushed Heath Bar bits, caramel topping, chocolate syrup <br>
+8. Peach or vanilla ice cream, graham-cracker crust, caramel sauce, diced peaches (all the better if caramelized!) <br>
+                  </p>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col col3 mb-4">
+            <div class="card cardbox" style="height: 100%; width: 100%">
+              
+              
+                <iframe   class="mx-auto video"
+                width="100%"
+                height="475" src="https://www.youtube.com/embed/_Ap1F3tWHwQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="card-body">
+                <h5 class="card-title">
+                  CHIFFON PIE | FILIPINO Recipe | PANLASANG PINOY | RECIPE
+                  KLEIN
+                </h5>
+
+               <p class="card-text overflow">
+                  <Strong>Ingredients CHIFFON PIE: <br></Strong>
+- 1 (.25 ounce) package unflavored gelatin <br>
+- ¼ cup cold water <br>
+- 4 egg yolks <br>
+- 4 egg whites <br>
+- 1 cup white sugar <br>
+- ½ cup fresh lemon juice <br>
+- 1 teaspoon lemon zest <br> 
+- ½ teaspoon salt <br>
+- 1 (9 inch) prepared graham cracker crust <br>
+
+  
+<Strong>Preparation: <br></Strong>
+1. Soften gelatin in water 5 minutes. <br>
+2. Beat yolks and add 1/2 cup of the sugar, lemon juice and salt. Cook in the top of a double boiler, stirring constantly, until of custard consistency. Add grated lemon zest and softened gelatin and stir thoroughly. Cool. <br>
+3. When mixture begins to get thick, In a clean bowl, whip egg whites until stiff, adding remaining 1/2 cup sugar while whipping. Fold egg whites into custard. <br>
+4. Pour filling into pie shell and chill in refrigerator. Serve when firm. Garnish with sweetened whipped cream if desired. <br>
+
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="btn3">Load More</button>
+      </div>
+
+      <!-- for load more button -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script>
+        $(".col3").slice(0, 2).show();
+        $(".btn3").on("click", function () {
+          $(".col3:hidden").slice(0, 2).slideDown();
+          if ($(".col3:hidden").length == 0) {
+            $(".btn3").fadeOut("slow");
+          }
+        });
+      </script>
+    </div>
+
+  </body>
+</html>

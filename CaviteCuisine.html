@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="CaviteCuisine.css" />
+
+    <title>Cavite Cuisine-KleinRecipe</title>
+  </head>
+  <body>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+
+<!-- navigation bar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light sticky-top"
+      style="background-color: #e3f2fd"
+    >
+    <h4 class="h4  text-info font-weight-bold ">Klein<span class="  h4  text-danger font-weight-bolder " style="padding-right: 5px;">Recipe </span></h4>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link btn-outline-warning"style="padding-left: 10px;" href="index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link btn-outline-warning"style="padding-left: 10px;" href="BatangasCuisine.html">Batangas Cuisine <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link btn-outline-warning"style="padding-left: 10px;" href="LagunaCuisine.html">Laguna Cuisine <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle btn-outline-warning"style="padding-left: 10px;"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Cavite Cuisine
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#FriedRicetems">Creamy Foods</a>
+              <a class="dropdown-item" href="#NoodlesItems">Pancit</a>
+              <a class="dropdown-item" href="#DumplingItems">Lumpia</a>
+              
+              
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link btn-outline-warning "style="padding-left: 10px;" href="https://www.foodpanda.ph/city/cavite-city" target="_blank">Shop Now <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <!-- how to link section of different page -->
+          <a class="nav-link navpad btn-outline-info" style="padding-left: 10px;" href="index.html#aboutus"
+            >Contact Me <span class="sr-only">(current)</span></a>
+        </form>
+      </div>
+    </nav>
+<!-- description about food -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="h1 font-weight-bolder">Cavite Cuisine</h1>
+        <p class="lead">
+            Cavite is one such place. It’s not easy for a non-local to name Caviteño food beyond Bacoor’s famed halo-halo, which is something you can easily get around the metro. It is a place known instead for its rich history, for being home to a good number of national heroes and historical milestones.
+
+            In any given period, this information might not mean much in a province’s effort to establish a distinct culinary identity. Cavite cannot bank on its historical currency in order to escape the mire of gastronomic obscurity it has long been in. Except recently, things seem to be in favor of just that: history. Amid the popularity of global flavors and the increasing foreign franchises in the country, the past two or three years have seen an emerging interest in local heritage cooking.
+
+            An informal forecast about the food trends of 2018 commissioned by San Miguel Pure Foods Culinary Center has found that Filipino heritage cuisine is bound to gain more traction among diners. Food that is rich in history is in. Fortunately for Cavite, food is history.
+
+            That is what we learned a few weeks ago, after going on a food tour around some of the province’s famed dining destinations in Tanza, Cavite City, and Trece Martires. It will take a while before the historically rich cuisine of Cavite can inhabit a unique place in the consciousness of the regular Manileño (especially since many of the dishes we had were typical home-cooked Filipino fare), but it’s the kind of food worth knowing and learning about, if only for the history lessons it tells us about Filipino cuisine.
+        </p>
+      </div>
+    </div>
+<!-- pictured of food -->
+    <div
+      id="carouselExampleControls"
+      class="carousel slide pic"
+      data-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="images/cc1.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="images/cc2.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="images/cc3.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleControls"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleControls"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+   
+    <br />
+    <br />
+<!-- reciepe section     -->
+    <nav class="navbar navbar navbar-light" style="background-color: #e3f2fd">
+      <div class="mx-auto">
+        <h2 class="h2 font-weight-bolder">"All The Recipes"</h2>
+      </div>
+    </nav>
+
+    <!--Creamy Foods coooking video section -->
+    <div>
+      <div class="box">
+        <button type="button" class="btn-danger btn-lg disabled">
+          <h3 id="FriedRicetems">Creamy Foods :</h3>
+        </button>
+
+        <br />
+        <br />
+
+        <div
+          class="
+            row row-cols-md-1 row row-cols-1 row row-cols-sm-1 row-cols-lg-2
+          "
+        >
+          <div class="col col1 mb-4">
+            <div class="card cardbox" style="height: 100%; width: 100%">
+              
+              <iframe
+              class="mx-auto video"
+              width="100%"
+              height="475" src="https://www.youtube.com/embed/q_WFErF64-o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="card-body">
+                <h5 class="card-title">
+                  MUTYA | FILIPINO CAVITE Recipe | PANLASANG PINOY | RECIPE
+                  KLEIN
+                </h5>
+
+               <p class="card-text overflow">
+                  <Strong>Ingredients MUTYA: <br></Strong>
+- 10 pieces shrimp <br>
+- 4 pieces crab cut in half <br>
+- 1 piece Knorr Shrimp Cube <br>
+- 4 ounces squid sliced <br>
+- 8 ounces fish fillet  <br>
+- 1 lb. mussels cleaned <br>
+- 1 piece carrot sliced thinly <br>
+- 1 piece red bell pepper sliced into squares <br>
+- 1 piece green bell pepper sliced into squares <br>
+- 1 piece onion chopped <br>
+- 1 stalk celery sliced <br>
+- Salt and ground black pepper to taste <br>
+
+<Strong>Ingredients Roux: <br></Strong>
+- 3 tablespoons butter <br>
+- 3 tablespoons all-purpose flour <br>
+- 1 ½ cups evaporated milk <br>
+- 1 ½ cups water <br>
+
+
+<Strong>Preparation: <br></Strong>
+1. Boil water in a wok or pan. Add crab. Continue boiling for 8 minutes. Transfer the crab and the stock to a clean bowl. Set aside. <br>
+2. Make the roux by melting butter in a wok. Add flour. Constantly stir while cooking for 2 minutes. Pour evaporated milk into the wok. Stir until mixture thickens. Pour the crab stock and stir until the texture of the mixture becomes smooth. <br>
+3. Add Knorr Shrimp Cube. Stir. <br>
+4. Add Crab, mussels, fish, onion, carrot, and celery. Cook for 3 to 5 minutes. <br>
+5. Put the bell pepper, shrimp, and squid into the wok. Stir and cook until the color of the shrimp turns orange.  <br>
+6. Season with salt and ground black pepper.  <br>
+7. Transfer to a serving bowl. Serve warm. Share and enjoy!  <br>
+
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col col1 mb-4">
+            <div class="card cardbox" style="height: 100%; width: 100%">
+              
+              <iframe
+              class="mx-auto video"
+              width="100%"
+              height="475" src="https://www.youtube.com/embed/So54BiYf9NA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="card-body">
+                <h5 class="card-title">
+                  CALANDRACAS | FILIPINO SOUP CAVITE Recipe | PANLASANG PINOY | RECIPE
+                  KLEIN
+                </h5>
+
+               <p class="card-text overflow">
+                  <Strong>Ingredients CALANDRACAS: <br></Strong>
+- 750 g beef brisket, cubed <br>
+- 3 pcs chorizo, sliced <br>
+- 2 cups macaroni pasta <br>
+- 400 g can chickpeas, drained and rinsed <br>
+- 3 pcs medium potatoes, cubed  <br>
+- 1/2 cabbage, sliced <br>
+- 2 white onions, sliced <br>
+- 4 cups beef stock <br>
+- fish sauce <br>
+- salt <br>
+- freshly ground black pepper <br>
+- oil <br>
+
+<Strong>Preparation: <br></Strong>
+1. Season beef cubes with salt and freshly ground black pepper. <br>
+2. In a soup pot add a bit of oil, heat it up until its smoking point then add the beef. Brown beef cubes on all sides. <br>
+3. Add the chorizo, onions, beef stock and pour enough water to cover the meat. Bring to a boil then simmer for 1 hour <br>
+4. Add the potatoes simmer for 5 minutes <br>
+5. Add the macaroni and chickpeas then simmer for 5 minutes.  <br>
+6. Add the cabbage then simmer for 5 more minutes  <br>
+7. Season with fish sauce and freshly ground black pepper then serve.  <br>
+
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col col1 mb-4">
+            <div class="card cardbox" style="height: 100%; width: 100%">
+              
+              <iframe
+              class="mx-auto video"
+              width="100%"
+              height="475" src="https://www.youtube.com/embed/G1MtstgOw9A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="card-body">
+                <h5 class="card-title">
+                  COCIDO | FILIPINO RECIPE | PANLASANG PINOY | RECIPE
+                  KLEIN
+                </h5>
+
+               <p class="card-text overflow">
+                  <Strong>Ingredients COCIDO MEAT: <br></Strong>
+- 1 piece (100 gm). ham bone <br>
+- 1/2 lb Beef short ribs <br>
+- 2 lbs Chicken cutlets <br>
+- 1/2 lb Pork shoulder or pork loin <br>
+- 2 Spanish chorizos or chorizo de bilbao, large <br>
+<Strong>Ingredients COCIDO CANNED GOODS: <br></Strong>
+- 12 cups Beef or chicken broth, organic <br>
+<Strong>Ingredients COCIDO BAKINGS & SPICES: <br></Strong>
+- 1 tsp Black pepper, ground powder <br>
+- 1 tbsp Peppercorns, black <br>
+- 2 tsp Salt <br>
+<Strong>Ingredients COCIDO OILS & VINEGARS: <br></Strong>
+- 1/4 cup Cider vinegar <br>
+- 1/8 cup Olive oil, extra virgin <br>
+
+
+<Strong>Preparation To cook the meats stove-top: <br></Strong>
+1. In a large heavy stockpot, over medium high heat, combine the ham bone, beef, broth (or water), onion, salt and black peppercorns. Cover and bring to a boil. Then lower the heat to a simmer. Continue cooking for 50 minutes till beef is tender. <br>
+2. To the same stockpot with the ham and beef, add the pork and chicken. Turn the heat up to a medium-high. Cover and let boil. Then lower heat to a slow simmer. Continue cooking till chicken and pork are cooked for about 45 to 50 minutes. <br>
+<Strong>Preparation To cook the vegetables stove-top: <br></Strong>
+1. When meats are thoroughly cooked, to the same stockpot, add the Spanish chorizos, potatoes and carrots. Cook for 20 minutes more. <br>
+2. ALastly, to the same stock pot, add the green beans, cabbage and garbanzos (chick peas). Cook for 8 minutes more. Remove the vegetables from the stockpot and place on serving platter. Cover to keep warm. Set aside.
+Keep the meats and broth covered to keep warm till ready to serve. <br>
+<Strong>Preparation To cook the Eggplant Hash stove-top: <br></Strong>
+1. In a small stockpot, boil eggplants in water for 25 minutes. When cool enough to handle, peel then mash. Add minced garlic and vinegar. Season with salt and black pepper powder. Set aside.  <br>
+<Strong>Preparation To cook the Tomato Sauce stove-top: <br></Strong>
+1. In a medium-sized saucepan, over medium-high heat, add the olive oil. Saute the garlic and onions. Add the chopped tomatoes. Stir and cover. Continue cooking for 25 to 30 minutes till tomatoes are soft and mushy. Set aside.  <br>
+<Strong>Preparation To assemble and serve Cocido: <br></Strong>
+1. In a large platter, arrange the meats side by side - nestle the beef cubes, ham bone, Spanish Chorizos, pork and chicken next to each other. If platter has room, place the vegetables next to the meats or else plate the vegetables in a separate dish.  <br>
+2. Separately, ladle the clear, piping-hot broth in a soup tureen, to be served alongside the Cocido platter.  <br>
+3. Serve on the side: The boiled banana plantains, Eggplant Hash and the Tomato Sauce in individual bowls. Serve the Cocido warm with rice.
+The meats and vegetables are meant to be eaten together with the hash and plantains, and with the tomato sauce drizzled on almost everything in each person's individual plates.  <br>
+
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col col1 mb-4">
+            <div class="card cardbox" style="height: 100%; width: 100%">
+             
+              <iframe
+              class="mx-auto video"
+              width="100%"
+              height="475" src="https://www.youtube.com/embed/RJbMj465JVE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="card-body">
+                <h5 class="card-title">
+                  DINAKDAKAN | FILIPINO CAVITE Recipe | PANLASANG PINOY | RECIPE
+                  KLEIN
+                </h5>
+
+               <p class="card-text overflow">
+                  <Strong>Ingredients DINAKDAKAN: <br></Strong>
+- 1 lb. pig ears <br>
+- 1 lb. pig face maskara <br>
+- 6 ounces pig liver <br>
+- 1 teaspoon ginger powder <br>
+- 1 medium red onion sliced  <br>
+- 6 green and red chili chopped <br>
+- 4 tablespoons white or cane vinegar <br>
+- 1 teaspoon garlic powder optional <br>
+- 1 tablespoon minced ginger <br>
+- 3 pieces bay leaves optional <br>
+- 1 tablespoon whole peppercorn optional <br>
+- 3/4 cup mayonnaise <br>
+- Salt and pepper to taste <br>
+
+
+<Strong>Preparation: <br></Strong>
+1. Pour 6 to 8 cups water in a cooking pot. Let boil. <br>
+2. Once the water starts to boil, you have the option to add dried bay leaves and whole peppercorn. Add-in the pig ears and face. Set the heat to low and continue to boil for 50 to 60 minutes. <br>
+3. Discard the water and let the excess water drip. Rub a little bit of salt all over the boiled ears and face. Rub the ginger powder on the liver. <br>
+4. Heat-up the grill. Grill the ears and face for 4 to 6 minutes per side or until it turns a bit crisp, but not burnt. Grill the liver for 5 to 8 minutes depending on the thickness. <br>
+5. Remove the grilled pig parts from the grill. Let it cool down and start chopping into bite-size pieces.  <br>
+6. Meanwhile, combine mayonnaise and vinegar in mixing bowl. Stir.  <br>
+7. Add some ground black pepper. Continue to stir until the ingredients are well blended.  <br>
+8. Add the ginger, chili, onion, and garlic powder (optional). Toss.  <br>
+9. Add more salt if needed.  <br>
+10. Transfer to a serving bowl. Serve.  <br>
+11. Share and enjoy!  <br>
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="btn1">Load More</button>
+      </div>
+
+      <!-- for load more button -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script>
+        $(".col1").slice(0, 2).show();
+        $(".btn1").on("click", function () {
+          $(".col1:hidden").slice(0, 2).slideDown();
+          if ($(".col1:hidden").length == 0) {
+            $(".btn1").fadeOut("slow");
+          }
+        });
+      </script>
+    </div>
+
+    <!--Pancit coooking video section -->
+    <div>
+      <div class="box">
+        <button type="button" class="btn-danger btn-lg disabled">
+          <h3 id="NoodlesItems">Pancit :</h3>
+        </button>
+
+        <br />
+        <br />
+
+        <div
+          class="
+            row row-cols-md-1 row row-cols-1 row row-cols-sm-1 row-cols-lg-2
+          "
+        >
+          <div class="col col2 mb-4">
+            <div class="card cardbox" style="height: 100%; width: 100%">
+             
+              <iframe
+              class="mx-auto video"
+              width="100%"
+              height="475" src="https://www.youtube.com/embed/2vNzDK4McYY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="card-body">
+                <h5 class="card-title">
+                  PANCIT ESTACION | FILIPINO CAVITE Recipe | PANLASANG PINOY | RECIPE
+                  KLEIN
+                </h5>
+
+               <p class="card-text overflow">
+                  <Strong>Ingredients FOR PANCIT ESTACION SAUCE: <br></Strong>
+- 3 Tablespoons vegetable oil <br>
+- 4 cloves garlic minced <br>
+- 1/2 pound fresh boiled shrimps boil fresh shrimps in 1 to 2 cups water for 8 to minutes to cook; use discarded heads for extracting shrimp juice <br>
+- 1/4 cup shrimp head juice extracted from boiling shrimp heads in water <br>
+- 1/4 cup achuete (annatto) water from soaking 2 teaspoons achuete in warm water  <br>
+- 3 cups chicken broth <br>
+- 3 Tablespoons cornstarch dissolved in 1/4 cup chicken broth at room temperature <br>
+- 1 to 2 teaspoons patis (fish sauce) <br>
+- 1 whole egg beaten <br>
+<Strong>Ingredients FOR PANCIT ESTACION NOODLES: <br></Strong>
+- 3 Tablespoons vegetable oil <br>
+- 12 pieces shallots, chopped fine <br>
+- 2 whole garlic cloves minced <br>
+- 250 g. dried bihon noodles <br>
+- 250 g. togue (mung bean sprouts) <br>
+- 1 cup chicken broth <br>
+<Strong>Ingredients FOR THE FINAL PANCIT ESTACION NOODLES ASSEMBLY: <br></Strong>
+- 1/2 cups salted peanuts crushed coarsely <br>
+- 1/2 of a whole white or yellow onion sauteed <br>
+- 2 cloves garlic peeled, minced, sauteed <br>
+- 1/2 cup crumbled chicharron (pork rinds) crushed <br>
+- 1/2 cup flaked tinapa (smoked fish) bones and skin removed <br>
+- 1 to 2 stalks scallions sliced <br>
+- 1 teaspoon ground black pepper <br>
+- 4 whole hard-boiled eggs peeled, sliced, for garnish <br>
+
+
+
+<Strong>Preparation To cook the Palabok sauce: <br></Strong>
+1.In a medium-sized skillet, over medium-high heat, add the cooking oil. When oil is hot enough, saute the garlic and onions for 1 to 2 minutes till brown. Do not burn the garlic, it affects the outcome of the dish. Pour the shrimp heads liquid. Mix and let the mixture simmer for 1 minute. <br>
+2. Pour the achuete (annatto) water and chicken broth. Season with patis (fish sauce). Let the mixture boil in about 5 minutes. <br>
+3. Lower the heat to a simmer. Add the diluted cornstarch (now a liquid) to the sauce in the skillet. Stir continuously for about 5 minutes till orange sauce becomes thick and coats the spoon.
+Very slowly, pour the beaten egg into the mixture while continuously stirring. You will create a threadlike design of the egg in the sauce. Take away from the heat. Set aside. <br>
+<Strong>Preparation To cook the Noodles: <br></Strong>
+1. Separately, in a large wok or skillet, add the oil. Saute the garlic and shallots for 1 to 2 minutes. Pour the chicken broth. Add the bihon noodles. Cook till the liquid is absorbed by the noodles. This will take about 5 minutes. Mix well.
+Add the togue (bean sprouts). Mix well. Continue cooking for 3 minutes more. Set aside. <br>
+<Strong>Preparation To assemble the Pancit Estacion: <br></Strong>
+1. Plate the cooked noodles and bean sprouts on a serving platter. Mix in the sauteed onions and garlic.
+Pour almost all the palabok sauce on top. Leave a little extra sauce for later when the dish has to be reheated.
+To the noodle dish, add the remaining ingredients on top of the noodles and sauce: Boiled shrimps, Tinapa flakes, peanuts, chicharron. Season with ground black pepper.
+Garnish with slices of hard-boiled eggs, calamansi (or lemon) and scallions. Serve warm.  <br>
+<Strong>Cook's comments: <br></Strong>
+In the cookbook recipe, the author added crushed kropek (fish crackers) and sliced, fresh kamias (bilimbi) to the topping.
+I did not have both ingredients at the time of cooking. But feel free to add if you prefer and if available in your area.  <br>
+
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col col2 mb-4">
+            <div class="card cardbox" style="height: 100%; width: 100%">
+              
+              <iframe
+              class="mx-auto video"
+              width="100%"
+              height="475" src="https://www.youtube.com/embed/0WF3OYcRaY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="card-body">
+                <h5 class="card-title">
+                  TUNA PESTO | FILIPINO CAVITE Recipe | PANLASANG PINOY | RECIPE
+                  KLEIN
+                </h5>
+
+               <p class="card-text overflow">
+                  <Strong>Ingredients FOR TUNA PESTO PASTA: <br></Strong>
+- 1 cup fresh basil leaves <br>
+- 3 cloves garlic, peeled <br>
+- 3 tablespoons roasted cashew nuts or toasted pine nuts <br>
+- 1/3 cup grated parmesan cheese, more for garnish <br>
+- 1/3 cup olive oil  <br>
+- 2 180-gram cans tuna in oil <br>
+- 1 500-gram pack spaghetti, cooked according to package directions <br>
+- salt, to taste <br>
+- ground pepper, to taste <br>
+
+<Strong>Preparation: <br></Strong>
+1. In a food processor or blender, combine all the ingredients for the homemade pesto: basil, garlic, nuts, cheese, and olive oil. Process until finely chopped. Season with salt and pepper, and set aside. <br>
+2. In a small pan, mix the tuna with oil and the freshly made basil pesto. Turn off the heat. Toss the mixture in the freshly cooked pasta. Transfer to a bowl, and garnish with Parmesan cheese. <br>
+3. Share and enjoy!  <br>
+
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col col2 mb-4">
+            <div class="card cardbox" style="height: 100%; width: 100%">
+             
+              <iframe
+              class="mx-auto video"
+              width="100%"
+              height="475" src="https://www.youtube.com/embed/TnzVK9lSVhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="card-body">
+                <h5 class="card-title">
+                  PANCIT PUSO | FILIPINO CAVITE Recipe | PANLASANG PINOY | RECIPE
+                  KLEIN
+                </h5>
+
+               <p class="card-text overflow">
+                  <Strong>Ingredients FOR PANCIT PUSO: <br></Strong>
+- 200 grams lechon kawali, cubed <br>
+- 100 grams shrimp (suwahe), remove heads and include with the dikdikin <br>
+- 200 grams small shrimps <br>
+- 1 piece crushed garlic<br>
+- 2 pieces sliced onion <br>
+- 2 pieces carrots, thinly sliced <br>
+- 100 grams green beans, sliced diagonally <br>
+- 100 grams cabbage, shredded <br>
+- fish sauce (patis), to taste <br>
+- peppercorn, to taste <br>
+- pork stock <br>
+- 500 grams bihon <br>
+- chicharon <br>
+<Strong>Ingredients FOR THE SOURING AGENT: <br></Strong>
+- 1 whole puso ng saging <br>
+- 2 cups vinegar/ 1 cup water <br>
+
+<Strong>PROCEDURE : <br></Strong>
+1. Prepare the lechon kawali, when cooled, chop in small morsels and set aside. <br>
+2. Quickly cook the shrimp (headless suwahe,use the head with the rest of the shrimp), in an oil-less hot wok until it turns red, remove from pan immediately, when cooled, shell and set aside. <br>
+3. In a mortar, pound the shrimp (body and head) with pestle. separate the shell from the flesh and strain the shrimp juice and mix with macerated shrimp, set aside.  <br>
+4. In a big carajay, saute the garlic, onion and shrimps. Add the carrot and green beans, after a few minute, add the cabbage and the shrimp juice.  <br>
+5. Season with patis and paminta. Mix well by using two sandok.  <br>
+6. Add the pork stock and once it starts to boil, lower the fire and add the bihon, while mixing it well and let it simmer until the noodles absorbed the liquid and the rest of the ingredients are distributed accordingly. Mix in the lechon kawali.  <br>
+
+<Strong>To make the souring agent: <br></Strong>
+1. Slice the puso ng saging thinly, about 1/8 inch crosswise. <br>
+2. Boil vinegar solution ratio 1:1( 1 cup strong vinegar:1 cup water) add a teaspoon of sugar and quarter teaspoon salt. <br>
+3. Place the puso ng saging in the boiling solution and let it boil until the liquid is reduced to half.  <br>
+4. Serve the cooked pancit in a platter and place 2 to 3 tablespoons of the puso ng saging and some of its liquid and coarsely ground chicharon.  <br>
+
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col col2 mb-4">
+            <div class="card cardbox" style="height: 100%; width: 100%">
+             
+              <iframe
+              class="mx-auto video"
+              width="100%"
+              height="475" src="https://www.youtube.com/embed/Acs-o4g4qQk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="card-body">
+                <h5 class="card-title">
+                  PANCIT PANSATE | FILIPINO CAVITE Recipe | PANLASANG PINOY | RECIPE
+                  KLEIN
+                </h5>
+
+               <p class="card-text overflow">
+                  <Strong>Ingredients FOR PANCIT PANSATE: <br></Strong>
+- 500 grams fresh yellow noodles <br>
+- 250 g pork, thinly sliced<br>
+- 1 large carrot, julienned <br>
+- 1/2 small Chinese cabbage, chopped <br>
+- 3 stalks spring onions, sliced <br>
+- 3 cups chicken stock <br>
+- 1 tbsp cornstarch <br>
+- 3 tbsp soy sauce <br>
+- 1 tbsp oyster sauce <br>
+- 2 small shallots, sliced <br>
+- 6 cloves garlic, minced <br>
+- 1sesame oil <br>
+- oil <br>
+- fish sauce <br>
+- freshly ground black pepper <br>
+- lemon wedges or calamansi <br>
+
+<Strong>Preparation: <br></Strong>
+1. Prepare fresh yellow noodles by soaking it in boiling water for a minute. Drain, rinse with cold running water then set aside. <br>
+2. Place wok in a high heat, add oil, and once hot add pork then stir fry for 2 minutes or until brown. Remove from wok then set it aside. <br>
+3. Add more oil if needed then sauté the shallots and garlic, add the carrots and spring onions stir fry for a minute.  <br>
+4. Mix the corn-starch, chicken stock, soy sauce and oyster sauce, pour it into the wok. Bring to a boil and let the sauce thicken.  <br>
+5. Add the noodles and Chinese cabbage, let the noodles absorb some of the liquid and cook for 2 minutes in high heat. Add water if needed  <br>
+6. Add the pork back in, then season with freshly ground black pepper and fish sauce. Drizzle sesame oil on top.  <br>
+7. Place in a serving platter together with lemon wedges or calamansi slices.  <br>
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="btn2">Load More</button>
+      </div>
+
+      <!-- for load more button -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script>
+        $(".col2").slice(0, 2).show();
+        $(".btn2").on("click", function () {
+          $(".col2:hidden").slice(0, 2).slideDown();
+          if ($(".col2:hidden").length == 0) {
+            $(".btn2").fadeOut("slow");
+          }
+        });
+      </script>
+    </div>
+
+    <!--Dumpling coooking video section -->
+    <div>
+      <div class="box">
+        <button type="button" class="btn-danger btn-lg disabled">
+          <h3 id="DumplingItems">Lumpia  :</h3>
+        </button>
+
+        <br />
+        <br />
+
+        <div
+          class="
+            row row-cols-md-1 row row-cols-1 row row-cols-sm-1 row-cols-lg-2
+          "
+        >
+          <div class="col col3 mb-4">
+            <div class="card cardbox" style="height: 100%; width: 100%">
+              
+              <iframe
+              class="mx-auto video"
+              width="100%"
+              height="475" src="https://www.youtube.com/embed/BIarUjm4U-0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="card-body">
+                <h5 class="card-title">
+                  LUMPIA | FILIPINO CAVITE Recipe | PANLASANG PINOY | RECIPE
+                  KLEIN
+                </h5>
+
+               <p class="card-text overflow">
+                  <Strong>Ingredients FOR LUMPIA: <br></Strong>
+- 50 pieces lumpia wrapper <br>
+- 3 cups cooking oil <br>
+
+<Strong>Ingredients FOR FILLING INGREDIETS: <br></Strong>
+- 1 1/2 lbs ground pork <br>
+- 2 pieces onion minced <br>
+- 2 pieces carrots minced<br>
+- 1 1/2 teaspoons garlic powder <br>
+- 1/2 teaspoon ground black pepper <br>
+- 1/2 cup parsley chopped <br>
+- 1 1/2 teaspoons salt <br>
+- 1 tablespoon sesame oil <br>
+- 2 eggs <br>
+
+
+
+<Strong>Preparation: <br></Strong>
+1. Combine all filling ingredients in a bowl. Mix well. <br>
+2. Scoop around 1 to 1 1/2 tablespoons of filling and place over a piece of lumpia wrapper. Spread the filling and then fold both sides of the wrapper. Fold the bottom. Brush beaten egg mixture on the top end of the wrapper. Roll-up until completely wrapped. Perform the same step until all mixture are consumed. <br>
+3. Heat oil in a cooking pot. Deep fry lumpia in medium heat until it floats.  <br>
+4. Remove from the pot. Let excess oil drip. Serve. Share and enjoy  <br>
+
+
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col col3 mb-4">
+            <div class="card cardbox" style="height: 100%; width: 100%">
+              
+              <iframe
+              class="mx-auto video"
+              width="100%"
+              height="475" src="https://www.youtube.com/embed/GVm7XJM9Z6Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="card-body">
+                <h5 class="card-title">
+                  LUMPIA SARIWA | FILIPINO CAVITE Recipe | PANLASANG PINOY | RECIPE
+                  KLEIN
+                </h5>
+
+               <p class="card-text overflow">
+                  <Strong>Ingredients FOR LUMPIA: <br></Strong>
+- 50 pieces lumpia wrapper <br>
+- 3 cups cooking oil <br>
+
+<Strong>Ingredients FOR FILLING INGREDIETS: <br></Strong>
+<Strong>Filling ingredients <br></Strong>
+- 2 cups sweet potato cubed <br>
+- 2 tbsp fish sauce patis <br>
+- 1 lb cabbage shredded <br>
+- 1 ½ cup carrots julienned <br>
+- ½ cup water <br>
+- ½ cup peanuts crushed <br>
+- 6 pieces Lettuce leaves <br>
+- ½ lb pork thinly sliced <br>
+- 1 pack extra firm tofu sliced in strips <br>
+- 1 cup shrimp shelled and deveined <br>
+- 2 cups string beans baguio beans, chopped<br>
+- 1 medium sized onions chopped <br>
+- ½ cup cilantro chopped <br>
+- 3 tbsp garlic minced <br>
+- 1 pork cube <br>
+<Strong>Wrapper ingredients <br></Strong>
+- 1 cup all-purpose flour <br>
+- 2 pieces raw eggs <br>
+- 2 tbsp cooking oil <br>
+- ½ tsp salt <br>
+- 1½ cups milk <br>
+<Strong>Sause ingredients <br></Strong>
+- 1 tbsp soy sauce <br>
+- ½ cup brown sugar <br>
+- 2 cups water <br>
+- ½ pork cube <br>
+- 1 tbsp garlic minced <br>
+- 2 tbsp corn starch diluted in 4 tbsp water <br>
+
+
+
+<Strong>Preparation: <br></Strong>
+1. Cook the filling by heating a pan. Pour-in the cooking oil then sauté the garlic and onions. Add the pork and cook until color turns light brown. Put-in the pork cube and add ½ cup water then simmer until pork is tender. Add the shrimps and sweet potatoes and cook for 5 minutes or until potatoes are soft. Add the tofu and cook for a few minutes. Put-in the cilantro, carrots, and string beans then mix with the other ingredients. Add the cabbage and let cook for 5 minutes. Add the fish sauce and mix. Set aside <br>
+2. Make the wrapper by cracking the eggs in a mixing bowl. Beat. Add the milk while beating. Put in the salt and all-purpose flour then mix thoroughly. Add the vegetable oil and mix well. Turn the stove on to medium heat and put the non-stick pan in place. Spray the pan with oil or grease with butter. Pour-in the wrapper mixture (about half a cup) and tilt the pan to distribute the liquid evenly. Cook until the top part of the mixture is dry (about 2 minutes). Using a spatula, remove the cooked mixture and place in a flat plate. Set aside <br>
+3. Make the sauce by pouring water in a sauce pan. Bring to a boil. Add the brown sugar and pork cubes. Put some salt and soy sauce then mix well. Dilute the cornstarch in water and pour in the saucepan. Cook until the sauce becomes thick. Set aside.  <br>
+4. Wrap the filling. Place the wrapper in a plate then place a lettuce leaf in the middle top part of the wrapper. Spoon the filling and place in the middle of the wrapper (over the lettuce leaf). Close the wrapper by folding the lower part first then roll the sides until the filling is sealed.  <br>
+5. Pour the sauce over the Lumpiang Sariwa and garnish with crushed peanuts and minced garlic.  <br>
+6. Serve. Share and Enjoy!  <br>
+
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col col3 mb-4">
+            <div class="card cardbox" style="height: 100%; width: 100%">
+              
+              <iframe
+              class="mx-auto video"
+              width="100%"
+              height="475" src="https://www.youtube.com/embed/FHJ77MbPwWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="card-body">
+                <h5 class="card-title">
+                  LUMPIA TOGUE | FILIPINO CAVITE Recipe | PANLASANG PINOY | RECIPE
+                  KLEIN
+                </h5>
+
+               <p class="card-text overflow">
+                  <Strong>Ingredients FOR LUMPIA TOGUE: <br></Strong>
+- 1 lb togue mung bean sprouts <br>
+- 1 medium-sized carrot julienned <br>
+- 1 teaspoon garlic minced <br>
+- 1 tablespoon onion minced <br>
+- 2 tablespoons fish sauce <br>
+- 3/4 cup dried shrimps <br>
+- 1 cup fried tofu chopped <br>
+- 1/8 teaspoon ground black pepper <br>
+- Spring roll wrapper <br>
+- 3 to 4 cups cooking oil <br>
+
+
+<Strong>Preparation: <br></Strong>
+1. Heat a wok or a frying pan and put-in 2 tablespoons of cooking oil. <br>
+2. When the oil is hot enough, Sauté the garlic and onions. <br>
+3. Add the dried shrimps and cook for 1 minute.  <br>
+4. Put-in the fried tofu then stir.  <br>
+5. Add the fish sauce and ground black pepper. <br>
+6. Put-in the mung bean sprouts and cook for 2 minutes.  <br>
+7. Add the carrot and cook for 1 to 2 minutes. Remove from the pan and let cool. <br>
+8. Wrap the cooked vegetable in spring roll (lumpia) wrapper  <br>
+9. Pour the remaining cooking oil in a cooking pot or deep fryer then apply heat.  <br>
+10. Deep fry the wrapped lumpia until the color of the wrapper turns golden brown.  <br>
+11. Remove from the cooking pot or deep fryer and place in a container lined with paper towel to absorb excess oils.  <br>
+12. Transfer to a serving plate  <br>
+13. Serve with vinegar and onion dip.  <br>
+14. Share and enjoy!  <br>
+
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col col3 mb-4">
+            <div class="card cardbox" style="height: 100%; width: 100%">
+              
+              <iframe
+              class="mx-auto video"
+              width="100%"
+              height="475" src="https://www.youtube.com/embed/IS5xBfsdHAc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="card-body">
+                <h5 class="card-title">
+                  MINI TURON | BANANA LUMPIA WITH CARAMEL FILIPINO CAVITE Recipe | PANLASANG PINOY | RECIPE
+                  KLEIN
+                </h5>
+
+               <p class="card-text overflow">
+                  <Strong>Ingredients FOR MINI TURON: <br></Strong>
+- 3 pieces Saba banana quartered <br>
+- 12 pieces thin lumpia wrapper <br>
+- 1/2 cup ripe jackfruit sliced into strips <br>
+- ½ cup brown sugar <br>
+- 1 cup vanilla ice cream optional <br>
+- 1 cup canola oil <br>
+<Strong>Ingredients FOR SIMPLE SYRUP: <br></Strong>
+- 1 cup brown sugar <br>
+- 1 cup water <br>
+
+
+<Strong>Preparation: <br></Strong>
+1. Prepare the simple syrup by boiling the water in a pot. Add the brown sugar. Stir until sugar is completely diluted. Continue to cook in low heat until the liquid reduces in half. Set aside. <br>
+2. Prepare the mini turon by arranging a piece of sliced banana over a lumpia wrapper. Put a strip of jackfruit on the side and spread a teaspoon or two of brown sugar. Secure the wrap by folding both sides inwards and then roll until the contents are completely wrapped. Seal the end of the wrapper by rubbing a bit of water using your fingers, and then press it gently against the turon. <br>
+3. Start to heat the oil in a pan.  <br>
+4. Meanwhile, brush some simple syrup all over each piece of turon. You can also dip the turon in syrup.  <br>
+5. Fry one side in low to medium heat for 3 minutes. Turn over to fry the other side for the same time or until the mini turon pieces are golden brown and crispy. <br>
+6. Arrange in a plate. Serve with scoops of vanilla ice cream.  <br>
+7. Share and enjoy! <br>
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="btn3">Load More</button>
+      </div>
+
+      <!-- for load more button -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script>
+        $(".col3").slice(0, 2).show();
+        $(".btn3").on("click", function () {
+          $(".col3:hidden").slice(0, 2).slideDown();
+          if ($(".col3:hidden").length == 0) {
+            $(".btn3").fadeOut("slow");
+          }
+        });
+      </script>
+    </div>
+
+  </body>
+</html>
